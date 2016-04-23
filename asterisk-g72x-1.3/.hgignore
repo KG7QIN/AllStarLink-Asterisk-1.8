@@ -1,0 +1,24 @@
+syntax: glob
+
+Makefile.in
+aclocal.m4
+compile
+config.*
+configure
+depcomp
+install-sh
+ltmain.sh
+m4/l*m4
+missing
+
+*.la
+*.lo
+*.so
+.deps
+.dirstamp
+.libs
+Makefile
+autom4te.cache
+confdefs.h
+libtool
+stamp-h1

@@ -1,0 +1,3 @@
+<member name="chan_beagle" displayname="Beagleboard Radio Interface Channel Driver" remove_on_change="channels/chan_beagle.o channels/chan_beagle.so">
+        <defaultenabled>yes</defaultenabled> 	 	 
+</member>

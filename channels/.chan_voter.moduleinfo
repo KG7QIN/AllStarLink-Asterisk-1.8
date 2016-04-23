@@ -1,0 +1,2 @@
+<member name="chan_voter" displayname="radio Voter channel driver" remove_on_change="channels/chan_voter.o channels/chan_voter.so">
+</member>

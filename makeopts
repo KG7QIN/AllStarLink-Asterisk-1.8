@@ -1,0 +1,311 @@
+# NOTE: Names of _INCLUDE and _LIB entries in this file must be
+#       the exact uppercase equivalents of the names used for
+#       dependencies in menuselect for the same package.
+
+CC=gcc
+HOST_CC=cc
+BUILD_CC=cc
+CXX=g++
+
+INSTALL=/usr/bin/install -c
+AWK=gawk
+BISON=/usr/bin/bison
+FLEX=/usr/bin/flex
+GREP=/bin/grep
+MAKE=make
+AR=ar
+RANLIB=ranlib
+FIND=/usr/bin/find
+COMPRESS=:
+BASENAME=/usr/bin/basename
+SHELL=/bin/bash
+LN=/bin/ln
+DOT=:
+STRIP=strip
+WGET=/usr/bin/wget
+FETCH=
+DOWNLOAD=/usr/bin/wget
+SOUNDS_CACHE_DIR=
+RUBBER=:
+CATDVI=:
+KPATHSEA=/usr/bin/kpsewhich
+XMLLINT=/usr/bin/xmllint
+XMLSTARLET=:
+MD5=md5sum
+SHA1SUM=sha1sum
+OPENSSL=openssl
+GIT=/usr/bin/git
+
+BUILD_PLATFORM=i686-pc-linux-gnu
+BUILD_CPU=i686
+BUILD_VENDOR=pc
+BUILD_OS=linux-gnu
+
+HOST_PLATFORM=i686-pc-linux-gnu
+HOST_CPU=i686
+HOST_VENDOR=pc
+HOST_OS=linux-gnu
+
+OSARCH=linux-gnu
+OSREV=3.19.0-30-generic
+
+GC_CFLAGS=-ffunction-sections
+GC_LDFLAGS=-Wl,--gc-sections
+
+PTHREAD_CFLAGS=-pthread
+PTHREAD_LIBS=
+
+CONFIG_CFLAGS=
+CONFIG_LDFLAGS=
+
+GNU_LD=1
+WEAKREF=0
+HAVE_DYNAMIC_LIST=1
+
+prefix = /usr
+exec_prefix = ${prefix}
+
+datarootdir = ${prefix}/share
+datadir = ${datarootdir}
+includedir = ${prefix}/include
+infodir = ${datarootdir}/info
+libdir = ${exec_prefix}/lib
+libexecdir = ${exec_prefix}/libexec
+localstatedir = /var
+mandir = ${datarootdir}/man
+sbindir = ${exec_prefix}/sbin
+sharedstatedir = ${prefix}/com
+sysconfdir = /etc
+
+ASTSBINDIR = ${sbindir}
+ASTETCDIR = ${sysconfdir}/asterisk
+ASTHEADERDIR = ${includedir}/asterisk
+ASTLIBDIR = ${libdir}/asterisk
+ASTMANDIR = ${mandir}
+astvarlibdir = ${localstatedir}/lib/asterisk
+ASTVARLIBDIR = ${localstatedir}/lib/asterisk
+ASTDATADIR = ${astvarlibdir}
+ASTDBDIR = ${astvarlibdir}
+ASTKEYDIR = ${astvarlibdir}
+ASTSPOOLDIR = ${localstatedir}/spool/asterisk
+ASTLOGDIR = ${localstatedir}/log/asterisk
+ASTVARRUNDIR = ${localstatedir}/run/asterisk
+
+AST_DEVMODE=
+NOISY_BUILD=
+
+AST_CODE_COVERAGE=no
+
+AST_DECLARATION_AFTER_STATEMENT=-Wdeclaration-after-statement
+AST_NO_STRICT_OVERFLOW=-fno-strict-overflow
+AST_SHADOW_WARNINGS=-Wshadow
+AST_NESTED_FUNCTIONS=
+AST_FORTIFY_SOURCE=-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2
+
+ALSA_INCLUDE= 
+ALSA_LIB= -lasound -lm -ldl
+
+BFD_INCLUDE= 
+BFD_LIB= -lbfd 
+
+BLUETOOTH_INCLUDE= 
+BLUETOOTH_LIB= -lbluetooth 
+
+CURL_INCLUDE=
+CURL_LIB=-L/usr/lib/i386-linux-gnu -lcurl
+
+CURSES_INCLUDE= 
+CURSES_LIB= -lcurses 
+CURSES_DIR=
+
+EDITLINE_LIB= -ltermcap 
+
+FREETDS_INCLUDE= 
+FREETDS_LIB= -lsybdb 
+
+GENERIC_ODBC_INCLUDE= 
+GENERIC_ODBC_LIB= -lodbc 
+
+GMIME_INCLUDE=-D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -pthread -I/usr/local/include/gmime-2.6 -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include 
+GMIME_LIB=-L/usr/local/lib -lgmime-2.6 -lgio-2.0 -lgobject-2.0 -lglib-2.0 
+
+HOARD_LIB=
+
+GSM_INTERNAL=no
+GSM_INCLUDE=
+GSM_LIB=-lgsm
+
+GTK2_INCLUDE=-pthread -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libpng12 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng12 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/freetype2 
+GTK2_LIB=-lgtk-x11-2.0 -lgdk-x11-2.0 -lpangocairo-1.0 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lfontconfig -lfreetype 
+
+ICAL_INCLUDE= -pthread
+ICAL_LIB= -lical 
+
+ICONV_INCLUDE= 
+ICONV_LIB= -lc 
+
+IKSEMEL_INCLUDE= 
+IKSEMEL_LIB= -liksemel 
+
+IMAP_TK_INCLUDE=-DUSE_SYSTEM_CCLIENT
+IMAP_TK_LIB=-lc-client 
+
+IODBC_INCLUDE=
+IODBC_LIB=
+
+JACK_INCLUDE= 
+JACK_LIB= -ljack 
+
+LDAP_INCLUDE= 
+LDAP_LIB= -lldap 
+
+LUA_INCLUDE=  -I/usr/include/lua5.1
+LUA_LIB= -llua5.1 -lm
+
+MYSQLCLIENT_INCLUDE=-I/usr/include/mysql -DBIG_JOINS=1 -fno-strict-aliasing -g -fabi-version=2 -fno-omit-frame-pointer -fno-strict-aliasing
+MYSQLCLIENT_LIB=-L/usr/lib/i386-linux-gnu -lmysqlclient -lpthread -lz -lm -ldl
+
+NBS_INCLUDE=
+NBS_LIB=
+
+NCURSES_INCLUDE= 
+NCURSES_LIB= -lncurses 
+NCURSES_DIR=
+
+NEON_INCLUDE=-I/usr/include/neon -D_LARGEFILE64_SOURCE -DNE_LFS
+NEON_LIB=-lneon-gnutls
+NEON29_INCLUDE=-I/usr/include/neon -D_LARGEFILE64_SOURCE -DNE_LFS
+NEON29_LIB=-lneon-gnutls
+
+NETSNMP_INCLUDE=-DNETSNMP_ENABLE_IPV6 -fno-strict-aliasing -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -DNETSNMP_USE_INLINE -Ulinux -Dlinux=linux -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fwrapv -fno-strict-aliasing -pipe -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -I/usr/lib/i386-linux-gnu/perl/5.20/CORE -D_FORTIFY_SOURCE=2 -I. -I/usr/include
+NETSNMP_LIB=-Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -L/usr/lib/i386-linux-gnu -lnetsnmpmibs -lsensors -ldl -lnetsnmpagent -lwrap -Wl,-E -lnetsnmp -lcrypto -lm
+
+NEWT_INCLUDE= 
+NEWT_LIB= -lnewt 
+
+OGG_INCLUDE= 
+OGG_LIB= -logg 
+
+OSPTK_INCLUDE=
+OSPTK_LIB=
+
+# ossaudio can optionally use ffmpeg, x11, sdl and sdl_image.
+# Because sdl_image in turn depends on sdl, we don't duplicate the include
+OSS_INCLUDE=   -I/usr/include/SDL -D_GNU_SOURCE=1 -D_REENTRANT  
+OSS_LIB=  -L/usr/lib/i386-linux-gnu -lSDL   -lX11 
+
+PGSQL_INCLUDE=-I/usr/include/postgresql
+PGSQL_LIB=-L/usr/lib/i386-linux-gnu -lpq -lz
+
+POPT_INCLUDE= 
+POPT_LIB= -lpopt 
+
+PORTAUDIO_INCLUDE= 
+PORTAUDIO_LIB= -lportaudio 
+
+PRI_INCLUDE=
+PRI_LIB=
+
+RESAMPLE_INCLUDE= 
+RESAMPLE_LIB= -lresample -lm
+
+SS7_INCLUDE= 
+SS7_LIB= -lss7 
+
+OPENR2_INCLUDE= 
+OPENR2_LIB= -lopenr2 
+
+PWLIB_INCLUDE=
+PWLIB_LIB=
+
+AIS_INCLUDE=
+AIS_LIB=
+
+RADIUS_INCLUDE= 
+RADIUS_LIB= -lfreeradius-client 
+
+FFMPEG_INCLUDE=
+FFMPEG_LIB=
+
+X11_INCLUDE= 
+X11_LIB= -lX11 
+
+SDL_INCLUDE=-I/usr/include/SDL -D_GNU_SOURCE=1 -D_REENTRANT
+SDL_LIB=-L/usr/lib/i386-linux-gnu -lSDL
+
+SDL_IMAGE_INCLUDE=
+SDL_IMAGE_LIB=
+
+SPANDSP_INCLUDE=  
+SPANDSP_LIB= -lspandsp -ltiff
+
+SPEEX_INCLUDE= 
+SPEEX_LIB= -lspeex -lm
+
+SPEEXDSP_INCLUDE= 
+SPEEXDSP_LIB= -lspeexdsp -lm
+
+SQLITE_INCLUDE= 
+SQLITE_LIB= -lsqlite 
+
+SQLITE3_INCLUDE= -pthread
+SQLITE3_LIB= -lsqlite3 
+
+SRTP_LIB= -lsrtp 
+SRTP_INCLUDE= 
+
+OPENSSL_INCLUDE= 
+OPENSSL_LIB= -lssl -lcrypto
+
+CRYPTO_INCLUDE= 
+CRYPTO_LIB= -lcrypto 
+
+TONEZONE_INCLUDE= 
+TONEZONE_LIB= -ltonezone  
+
+USB_INCLUDE=
+USB_LIB=-lusb
+
+UNIXODBC_INCLUDE= 
+UNIXODBC_LIB= -lodbc 
+
+VORBIS_INCLUDE= 
+VORBIS_LIB= -lvorbis -lm -lvorbisenc -lvorbisfile
+
+VPB_INCLUDE=
+VPB_LIB=-lvpb
+
+DAHDI_INCLUDE=
+
+ZLIB_INCLUDE= 
+ZLIB_LIB= -lz 
+
+ISDNNET_INCLUDE=
+ISDNNET_LIB=
+
+MISDN_INCLUDE=
+MISDN_LIB=
+
+SUPPSERV_INCLUDE=
+SUPPSERV_LIB=
+
+CAP_LIB= -lcap 
+CAP_INCLUDE= 
+
+BKTR_INCLUDE= 
+BKTR_LIB= -lc 
+
+TERMCAP_INCLUDE= 
+TERMCAP_LIB= -ltermcap 
+TERMCAP_DIR=
+
+LIBXML2_INCLUDE=-I/usr/include/libxml2
+LIBXML2_LIB=-lxml2
+
+TINFO_INCLUDE= 
+TINFO_LIB= -ltinfo 
+TINFO_DIR=
+
+# if poll is not present, let the makefile know.
+POLL_AVAILABLE=1
+TIMERFD_INCLUDE=
