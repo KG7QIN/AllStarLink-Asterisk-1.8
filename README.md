@@ -5,9 +5,9 @@ Start of porting AllStarLink modules to Asterisk 1.8.32.3 - very alpha software!
 
 ---------------------------------------------------------------------------------------------------------------------------------
 Updates:
-06/03/18 - Merged changes of app_rpt.c from offical AllStarLink reporitory into app_rpt.c here.  A total of three changes were 
-           merged in, and this brings the version number up from 0.325 to 0.327.
-           
+
+06/03/18 - Merged changes of app_rpt.c from offical AllStarLink reporitory into app_rpt.c here.  A total of three changes were merged in, and this brings the version number up from 0.325 to 0.327.
+
 ---------------------------------------------------------------------------------------------------------------------------------
 I'm placing this code here so that:
 
@@ -60,3 +60,17 @@ You will need to compile and install the DAHDI driver code located here https://
  Also, don't attempt to just drop the ported app_ and chan_ pieces here to an existing version/install of Asterisk 1.8.32.3 and expect them to run.  The modules will load, but app_rpt will not work (see above for details).
  
  My test system is running Ubuntu 15.04 and I am using GCC 4.9 to compile this code.  Newer versions of GCC may not work with the code as it currently is.
+
+# Compiling
+When compiling this code with a version of GCC that is newer than 4.9, you will likely encounter an error and everything will stop.
+<br>
+To fix this, you will need to have GCC-4.9 installed on your system and execute the following commands:
+<br>
+make clean<br>
+export PTLIB_CONFIG=/usr/share/ptlib/make/ptlib-config<br>
+./configure CC=gcc-4.9 CPP=cpp-4.9<br>
+export CC=gcc-4.9<br>
+export CPP=cpp-4.9<br>
+make<br>
+<br>
+The code *should* compile with out problems -- just ignore the warnings.
