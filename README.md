@@ -3,6 +3,12 @@ Start of porting AllStarLink modules to Asterisk 1.8.32.3 - very alpha software!
 # AllStarLink-Asterisk-1.8
 Start of porting AllStarLink modules to Asterisk 1.8.32.3 - very alpha software!  Not for production use!!!
 
+---------------------------------------------------------------------------------------------------------------------------------
+Updates:
+06/03/18 - Merged changes of app_rpt.c from offical AllStarLink reporitory into app_rpt.c here.  A total of three changes were 
+           merged in, and this brings the version number up from 0.325 to 0.327.
+           
+---------------------------------------------------------------------------------------------------------------------------------
 I'm placing this code here so that:
 
 1.  It doesn't get lost
