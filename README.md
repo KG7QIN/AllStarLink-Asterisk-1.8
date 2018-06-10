@@ -1,7 +1,5 @@
 # AllStarLink-Asterisk-1.8
 Start of porting AllStarLink modules to Asterisk 1.8.32.3 - very alpha software!  Not for production use!!!
-# AllStarLink-Asterisk-1.8
-Start of porting AllStarLink modules to Asterisk 1.8.32.3 - very alpha software!  Not for production use!!!
 
 ---------------------------------------------------------------------------------------------------------------------------------
 Updates:
@@ -53,7 +51,7 @@ load into asterisk (no panics, etc), there is NO GUARANTEE that they will actual
 There is a fair bit of debugging code in this as well.  
 
 You will need to compile and install the DAHDI driver code located here https://github.com/KG7QIN/AllStarLink/tree/master/dahdi
- (this is DAHDI 2.10.1+2.10.2 that has been modified to replace the missing pieces needed by the AllStarLink modules to run).
+ (this is DAHDI 2.10.2+2.10.2 that has been modified to replace the missing pieces needed by the AllStarLink modules to run).
  
  There currently are no plans to offer precompiled versions of this code to download an install.  To use this, you need to be able to successfully compile Asterisk 1.8.32.3 on your system.  Failure to successfully compile Asterisk will also result in you being unable to compile the code here.
  
